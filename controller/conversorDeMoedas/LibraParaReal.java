@@ -1,6 +1,6 @@
 package conversorDeMoedas;
 
-public class LibraParaReal implements Conversor {
+public class LibraParaReal implements Moedas {
 
 	@Override
 	public double converte(double valor) {

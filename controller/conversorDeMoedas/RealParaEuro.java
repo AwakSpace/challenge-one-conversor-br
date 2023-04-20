@@ -1,6 +1,6 @@
 package conversorDeMoedas;
 
-public class RealParaEuro implements Conversor {
+public class RealParaEuro implements Moedas {
 
 	@Override
 	public double converte(double valor) {

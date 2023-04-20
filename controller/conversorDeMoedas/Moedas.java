@@ -1,6 +1,6 @@
 package conversorDeMoedas;
 
-public interface Conversor {
+public interface Moedas {
 
 	public double converte(double valor);
 	public String retornaStringDoValorConvertido(double valorConvertido);

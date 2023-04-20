@@ -6,14 +6,14 @@ import menu.MenuDeOpcoes;
 
 public class ConversorDeMoedas extends MenuDeOpcoes{
 
-	private Conversor escolherConversorDeMoedas(Conversor[] conversores){
-		return (Conversor) JOptionPane.showInputDialog(null, "Escolha a moeda para a qual você deseja girar seu dinheiro: ", "Moedas", JOptionPane.QUESTION_MESSAGE, null, conversores, conversores[0]);
+	private Moedas escolherConversorDeMoedas(Moedas[] conversores){
+		return (Moedas) JOptionPane.showInputDialog(null, "Escolha a moeda para a qual você deseja girar seu dinheiro: ", "Moedas", JOptionPane.QUESTION_MESSAGE, null, conversores, conversores[0]);
 	}
 	
 	@Override
 	public void iniciarConversor() {
 		
-		Conversor[] conversores = {
+		Moedas[] conversores = {
 				new RealParaDolar(),
 				new RealParaEuro(),
 				new RealParaLibra(),
@@ -32,7 +32,7 @@ public class ConversorDeMoedas extends MenuDeOpcoes{
 			try {
 				double input = Double.parseDouble(JOptionPane.showInputDialog(null, "Insira um valor: ", "Input", JOptionPane.QUESTION_MESSAGE));
 				
-				Conversor conversor = this.escolherConversorDeMoedas(conversores);
+				Moedas conversor = this.escolherConversorDeMoedas(conversores);
 				
 				double valorConvertido = conversor.converte(input);
 				
