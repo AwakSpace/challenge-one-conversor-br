@@ -1,6 +1,6 @@
 package conversorDeMoedas;
 
-public class RealParaYene implements Conversor {
+public class RealParaYene implements Moedas {
 
 	@Override
 	public double converte(double valor) {

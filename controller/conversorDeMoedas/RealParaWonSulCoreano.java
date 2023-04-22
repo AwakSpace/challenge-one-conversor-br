@@ -1,6 +1,6 @@
 package conversorDeMoedas;
 
-public class RealParaWonSulCoreano implements Conversor {
+public class RealParaWonSulCoreano implements Moedas {
 
 	@Override
 	public double converte(double valor) {

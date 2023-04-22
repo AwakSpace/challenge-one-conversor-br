@@ -3,13 +3,15 @@ package menu;
 import javax.swing.JOptionPane;
 
 import conversores.ConversorDeMoedas;
+import conversores.ConversorDeTemperatura;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
 		MenuDeOpcoes[] opcoesDoMenu = {
-				new ConversorDeMoedas()
+				new ConversorDeMoedas(),
+				new ConversorDeTemperatura()
 		};
 		
 		boolean loop = true;
